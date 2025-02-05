@@ -23,6 +23,6 @@ autostart = false
     withCredentials = true
 
 [start]
-    map = './src/game/main/maps/map'
+    map = 'map'
     graphic = 'male'
-    hitbox = [32, 32]
+    hitbox = [16, 16]
