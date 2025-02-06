@@ -1,6 +1,7 @@
 modulesRoot = './src/game'
 
 modules = [
+    # '@rpgjs/chat',
     '@rpgjs/web3',
     './main',
     '@rpgjs/default-gui',

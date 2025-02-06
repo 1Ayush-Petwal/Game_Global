@@ -1,9 +1,12 @@
-import { type RpgClientEngineHooks, RpgClientEngine } from "@rpgjs/client";
+import { RpgClient, RpgModule } from '@rpgjs/client'
+import chat from './chat/client/gui/chat.vue'
 
-const client: RpgClientEngineHooks = {
-    onStart(engine: RpgClientEngine) {
-       
-    }
-};
-
-export default client;
+@RpgModule<RpgClient>({
+    gui: [
+        {
+            // id: 'rpg-chat',
+            component: chat
+        }
+    ]
+})
+export default class RpgClientEngine { }
